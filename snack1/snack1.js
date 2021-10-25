@@ -1,3 +1,10 @@
+/*
+Snack 1
+Creare un array di oggetti:
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
+*/
+
 "use strict"
 
 const bikes = [
@@ -23,8 +30,6 @@ const bikes = [
     },
 ];
 
-GetLightestBike();
-
 function GetLightestBike(){
     const lightestBike = bikes[0];
 
@@ -35,5 +40,7 @@ function GetLightestBike(){
     }
     const {name, weight} = lightestBike;
 
-    console.log(`the ligthest bike is: ${name} with a weight of ${weight}kg`);
+    console.log(`The ligthest bike is: ${name} with a weight of ${weight}kg`);
 }
+
+GetLightestBike();
