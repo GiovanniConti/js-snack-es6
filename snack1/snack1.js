@@ -30,12 +30,12 @@ const bikes = [
     },
 ];
 
-function GetLightestBike(){
-    const lightestBike = bikes[0];
+function GetLightestBike(bikesList){
+    const lightestBike = bikesList[0];
 
-    for(let i=0; i < bikes.length; i++){
-        if(bikes[i].weight < lightestBike.weight){
-            lightestBike = bikes[i];
+    for(let i=0; i < bikesList.length; i++){
+        if(bikesList[i].weight < lightestBike.weight){
+            lightestBike = bikesList[i];
         }
     }
     const {name, weight} = lightestBike;
@@ -43,4 +43,4 @@ function GetLightestBike(){
     console.log(`The ligthest bike is: ${name} with a weight of ${weight}kg`);
 }
 
-GetLightestBike();
+GetLightestBike(bikes);
